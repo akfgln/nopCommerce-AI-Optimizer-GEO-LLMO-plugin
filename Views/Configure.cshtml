@@ -1,0 +1,131 @@
+@model ConfigurationModel
+@{
+    Layout = "_ConfigurePlugin";
+}
+
+<form asp-controller="AiOptimizerAdmin" asp-action="Configure" method="post">
+    <div class="content-header clearfix">
+        <h1 class="float-left">
+            AI Optimizer (GEO &amp; LLMO) Configuration
+        </h1>
+        <div class="float-right">
+            <button type="submit" name="save" class="btn btn-primary">
+                <i class="far fa-save"></i> Save
+            </button>
+        </div>
+    </div>
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="cards-group">
+
+                @* Live Endpoints *@
+                <div class="card card-default">
+                    <div class="card-header">
+                        <i class="fas fa-robot"></i> Live AI &amp; LLM Endpoints
+                    </div>
+                    <div class="card-body">
+                        <p class="text-muted mb-3">
+                            The following endpoints are fetched by Generative AI search engines (ChatGPT Search, Perplexity AI, Google Gemini, Claude, etc.) to understand and index your store:
+                        </p>
+                        <div class="btn-group">
+                            <a href="@(Model.StoreUrl)/llms.txt" target="_blank" class="btn btn-outline-primary btn-sm me-2">
+                                <i class="fas fa-external-link-alt"></i> Open Live llms.txt
+                            </a>
+                            <a href="@(Model.StoreUrl)/llms-full.txt" target="_blank" class="btn btn-outline-secondary btn-sm me-2">
+                                <i class="fas fa-external-link-alt"></i> Open Live llms-full.txt
+                            </a>
+                            <a href="@(Model.StoreUrl)/robots.txt" target="_blank" class="btn btn-outline-info btn-sm">
+                                <i class="fas fa-file-alt"></i> Open robots.txt
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                @* General Settings *@
+                <div class="card card-default">
+                    <div class="card-header">
+                        <i class="fas fa-sliders-h"></i> General AI &amp; Schema Settings
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group row">
+                            <div class="col-md-4">
+                                <label class="col-form-label">Enable llms.txt Endpoints</label>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" asp-for="EnableLlmsTxt" id="EnableLlmsTxt" />
+                                    <label class="form-check-label" for="EnableLlmsTxt">Serve dynamic <code>/llms.txt</code> and <code>/llms-full.txt</code> endpoints</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-4">
+                                <label class="col-form-label">Store Schema (JSON-LD)</label>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" asp-for="EnableStoreSchema" id="EnableStoreSchema" />
+                                    <label class="form-check-label" for="EnableStoreSchema">Inject multilingual <code>GroceryStore</code> / <code>OnlineStore</code> JSON-LD on homepage</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-4">
+                                <label class="col-form-label">Halal Diet Schema (HalalDiet)</label>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" asp-for="EnableHalalDietSchema" id="EnableHalalDietSchema" />
+                                    <label class="form-check-label" for="EnableHalalDietSchema">Add Schema.org <code>suitableForDiet: HalalDiet</code> enrichment to product pages</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-4">
+                                <label class="col-form-label">FAQ Schema (FAQPage)</label>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" asp-for="EnableFaqSchema" id="EnableFaqSchema" />
+                                    <label class="form-check-label" for="EnableFaqSchema">Inject structured Q&amp;A (FAQPage JSON-LD) on homepage for AI snippets</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                @* llms.txt Editor *@
+                <div class="card card-default">
+                    <div class="card-header">
+                        <i class="fas fa-edit"></i> Edit <code>llms.txt</code> Content
+                    </div>
+                    <div class="card-body">
+                        <p class="text-muted">
+                            This text is served directly to AI crawlers as plain text Markdown at <strong>/llms.txt</strong>. You can customize your store identity, shipping details, categories, and policies below.
+                        </p>
+                        <div class="form-group">
+                            <textarea asp-for="CustomLlmsTxtContent" class="form-control" rows="22" style="font-family: Consolas, 'Courier New', monospace; font-size: 13px; line-height: 1.5;"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                @* llms-full.txt Editor *@
+                <div class="card card-default">
+                    <div class="card-header">
+                        <i class="fas fa-file-code"></i> Edit <code>llms-full.txt</code> Content (Optional)
+                    </div>
+                    <div class="card-body">
+                        <p class="text-muted">
+                            Extended Markdown document containing detailed catalog URLs, full brand directory, or shipping FAQs. If left empty, the <code>llms.txt</code> content above is automatically served.
+                        </p>
+                        <div class="form-group">
+                            <textarea asp-for="CustomLlmsFullTxtContent" class="form-control" rows="15" style="font-family: Consolas, 'Courier New', monospace; font-size: 13px; line-height: 1.5;"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</form>

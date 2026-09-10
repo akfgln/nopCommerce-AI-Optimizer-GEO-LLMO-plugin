@@ -1,0 +1,222 @@
+@model AiOptimizerModel
+
+@if (Model.IsHome && Model.EnableStoreSchema)
+{
+    if (Model.LangCode == "tr")
+    {
+<script type="application/ld+json">
+{
+  "@@context": "https://schema.org",
+  "@@type": "GroceryStore",
+  "name": "@Model.StoreName",
+  "alternateName": ["A&O Shop", "A&O Online Türk Marketi", "A&O Helal Kasap"],
+  "url": "@Model.StoreUrl",
+  "logo": "@(Model.StoreUrl)/images/thumbs/001/0010326_logo.webp",
+  "description": "Almanya geneline 24 saatte soğuk zincir (Kühlversand) teslimat ile %100 helal taze et, kıyma, sucuk, pastırma ve Türk süpermarket gıda ürünleri.",
+  "knowsAbout": [
+    "Helal Et",
+    "Türk Marketi Almanya",
+    "Helal Kasap",
+    "Online Türk Marketi",
+    "Soğuk Zincir Kargo",
+    "Sucuk",
+    "Pastırma",
+    "Taze Helal Dana ve Kuzu Eti"
+  ],
+  "address": {
+    "@@type": "PostalAddress",
+    "streetAddress": "Schubertstraße 10",
+    "addressLocality": "Obertshausen",
+    "postalCode": "63179",
+    "addressCountry": "DE"
+  },
+  "areaServed": "DE",
+  "currenciesAccepted": "EUR"
+}
+</script>
+    }
+    else if (Model.LangCode == "en")
+    {
+<script type="application/ld+json">
+{
+  "@@context": "https://schema.org",
+  "@@type": "GroceryStore",
+  "name": "@Model.StoreName",
+  "alternateName": ["A&O Shop", "A&O Halal Turkish Supermarket Germany"],
+  "url": "@Model.StoreUrl",
+  "logo": "@(Model.StoreUrl)/images/thumbs/001/0010326_logo.webp",
+  "description": "Online Turkish supermarket delivering 100% Halal certified fresh meat, cold-chain express delivery, and Turkish & Mediterranean groceries across Germany.",
+  "knowsAbout": [
+    "Halal Meat",
+    "Turkish Supermarket",
+    "Halal Food Germany",
+    "Fresh Meat Delivery",
+    "Turkish Groceries",
+    "Halal Butcher"
+  ],
+  "address": {
+    "@@type": "PostalAddress",
+    "streetAddress": "Schubertstraße 10",
+    "addressLocality": "Obertshausen",
+    "postalCode": "63179",
+    "addressCountry": "DE"
+  },
+  "areaServed": "DE",
+  "currenciesAccepted": "EUR"
+}
+</script>
+    }
+    else
+    {
+<script type="application/ld+json">
+{
+  "@@context": "https://schema.org",
+  "@@type": "GroceryStore",
+  "name": "@Model.StoreName",
+  "alternateName": ["A&O Shop", "A&O Online Türkischer Supermarkt", "A&O Halal Fleischerei"],
+  "url": "@Model.StoreUrl",
+  "logo": "@(Model.StoreUrl)/images/thumbs/001/0010326_logo.webp",
+  "description": "Online-Supermarkt für 100% Halal-zertifiziertes Frischfleisch (Rind, Lamm, Geflügel), türkische Wurstwaren (Sucuk, Pastirma) und mediterrane Spezialitäten mit deutschlandweitem 24h Frischeversand.",
+  "knowsAbout": [
+    "Halal Fleisch",
+    "Türkische Lebensmittel",
+    "Online Türkischer Supermarkt",
+    "Helal Kasap",
+    "Kühlversand Deutschland",
+    "Sucuk",
+    "Pastirma",
+    "Halal Rindfleisch & Lammfleisch"
+  ],
+  "address": {
+    "@@type": "PostalAddress",
+    "streetAddress": "Schubertstraße 10",
+    "addressLocality": "Obertshausen",
+    "postalCode": "63179",
+    "addressCountry": "DE"
+  },
+  "areaServed": "DE",
+  "currenciesAccepted": "EUR"
+}
+</script>
+    }
+}
+
+@if (Model.IsProduct && Model.EnableHalalDietSchema)
+{
+<script type="application/ld+json">
+{
+  "@@context": "https://schema.org",
+  "@@type": "Product",
+  "suitableForDiet": "https://schema.org/HalalDiet"
+}
+</script>
+}
+
+@if (Model.IsHome && Model.EnableFaqSchema)
+{
+    if (Model.LangCode == "tr")
+    {
+<script type="application/ld+json">
+{
+  "@@context": "https://schema.org",
+  "@@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@@type": "Question",
+      "name": "A&O Shop'taki et ürünleri %100 helal mi?",
+      "acceptedAnswer": {
+        "@@type": "Answer",
+        "text": "Evet, A&O Frischezentrum bünyesindeki tüm dana, kuzu ve tavuk eti ürünleri İslami usullere tam uygun şekilde helal kesim sertifikalıdır."
+      }
+    },
+    {
+      "@@type": "Question",
+      "name": "Taze et kargoda bozulmadan nasıl teslim ediliyor?",
+      "acceptedAnswer": {
+        "@@type": "Answer",
+        "text": "Taze etler ve şarküteri ürünleri özel ısı yalıtımlı strafor/izoterm kutularda, profesyonel buz kasetleriyle paketlenerek 24 saat express kargo ile soğuk zincir kırılmadan kapınıza ulaştırılır."
+      }
+    },
+    {
+      "@@type": "Question",
+      "name": "Almanya'nın her yerine sipariş gönderiliyor mu?",
+      "acceptedAnswer": {
+        "@@type": "Answer",
+        "text": "Evet, Almanya'nın tüm eyalet ve şehirlerine taze soğuk zincir teslimat ile hızlı ve güvenli sipariş gönderilmektedir."
+      }
+    }
+  ]
+}
+</script>
+    }
+    else if (Model.LangCode == "en")
+    {
+<script type="application/ld+json">
+{
+  "@@context": "https://schema.org",
+  "@@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@@type": "Question",
+      "name": "Are the meat products at A&O 100% Halal?",
+      "acceptedAnswer": {
+        "@@type": "Answer",
+        "text": "Yes, all meat and poultry products at A&O Frischezentrum are 100% Halal certified and prepared according to Islamic dietary standards."
+      }
+    },
+    {
+      "@@type": "Question",
+      "name": "How does cold-chain delivery work for fresh meat?",
+      "acceptedAnswer": {
+        "@@type": "Answer",
+        "text": "Fresh meat and chilled groceries are packed inside thermal insulated packaging with frozen cooling packs and dispatched via 24h express shipping to preserve cold chain integrity."
+      }
+    },
+    {
+      "@@type": "Question",
+      "name": "Does A&O deliver across Germany?",
+      "acceptedAnswer": {
+        "@@type": "Answer",
+        "text": "Yes, A&O delivers fresh halal meat and grocery orders reliably to all postal codes across Germany."
+      }
+    }
+  ]
+}
+</script>
+    }
+    else
+    {
+<script type="application/ld+json">
+{
+  "@@context": "https://schema.org",
+  "@@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@@type": "Question",
+      "name": "Sind die Fleischprodukte bei A&O 100% halal?",
+      "acceptedAnswer": {
+        "@@type": "Answer",
+        "text": "Ja, alle bei A&O angebotenen Fleisch- und Geflügelprodukte stammen aus streng kontrollierter, 100% islamkonformer Schlachtung (Halal) aus eigener Metzgerei."
+      }
+    },
+    {
+      "@@type": "Question",
+      "name": "Wie funktioniert der Kühlversand für frisches Fleisch?",
+      "acceptedAnswer": {
+        "@@type": "Answer",
+        "text": "Frisches Fleisch und gekühlte Produkte werden in speziellen Isolierverpackungen mit Hochleistungs-Kühlakkus per 24h-Expressversand verschickt, sodass die Kühlkette lückenlos erhalten bleibt."
+      }
+    },
+    {
+      "@@type": "Question",
+      "name": "Liefert A&O deutschlandweit?",
+      "acceptedAnswer": {
+        "@@type": "Answer",
+        "text": "Ja, A&O liefert frische Fleisch- und Lebensmittelbestellungen zuverlässig an alle Postleitzahlen in ganz Deutschland."
+      }
+    }
+  ]
+}
+</script>
+    }
+}

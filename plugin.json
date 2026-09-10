@@ -1,0 +1,11 @@
+{
+  "Group": "Misc",
+  "FriendlyName": "AI Optimizer (GEO & LLMO)",
+  "SystemName": "Misc.AiOptimizer",
+  "Version": "1.0.0",
+  "SupportedVersions": [ "4.90" ],
+  "Author": "A&O International",
+  "DisplayOrder": 1,
+  "FileName": "Nop.Plugin.Misc.AiOptimizer.dll",
+  "Description": "Optimizes store visibility for Generative AI engines (ChatGPT, Perplexity, Gemini, Claude) with llms.txt, robots.txt crawler rules, and Schema.org JSON-LD structured data."
+}
