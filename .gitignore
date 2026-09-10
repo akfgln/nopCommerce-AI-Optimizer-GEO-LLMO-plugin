@@ -1,0 +1,17 @@
+# Build results
+[Bb]in/
+[Oo]bj/
+obj
+bin
+publish/
+
+# Visual Studio files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# OS generated files
+.DS_Store
+Thumbs.db
