@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\A\\S\\src\\Plugins\\Nop.Plugin.Misc.AiOptimizer\\Nop.Plugin.Misc.AiOptimizer.csproj": {}
+    "c:\\A\\S\\src\\Plugins\\Nop.Plugin.Misc.AiOptimizer\\Nop.Plugin.Misc.AiOptimizer.csproj": {}
   },
   "projects": {
-    "C:\\A\\S\\src\\Libraries\\Nop.Core\\Nop.Core.csproj": {
+    "c:\\A\\S\\src\\Libraries\\Nop.Core\\Nop.Core.csproj": {
       "version": "4.90.0",
       "restore": {
-        "projectUniqueName": "C:\\A\\S\\src\\Libraries\\Nop.Core\\Nop.Core.csproj",
+        "projectUniqueName": "c:\\A\\S\\src\\Libraries\\Nop.Core\\Nop.Core.csproj",
         "projectName": "Nop.Core",
-        "projectPath": "C:\\A\\S\\src\\Libraries\\Nop.Core\\Nop.Core.csproj",
+        "projectPath": "c:\\A\\S\\src\\Libraries\\Nop.Core\\Nop.Core.csproj",
         "packagesPath": "C:\\Users\\akfgl\\.nuget\\packages\\",
-        "outputPath": "C:\\A\\S\\src\\Libraries\\Nop.Core\\obj\\",
+        "outputPath": "c:\\A\\S\\src\\Libraries\\Nop.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -30,7 +30,6 @@
         },
         "frameworks": {
           "net9.0": {
-            "framework": "net9.0",
             "targetAlias": "net9.0",
             "projectReferences": {}
           }
@@ -55,7 +54,6 @@
       },
       "frameworks": {
         "net9.0": {
-          "framework": "net9.0",
           "targetAlias": "net9.0",
           "dependencies": {
             "AutoMapper": {
@@ -123,14 +121,14 @@
         }
       }
     },
-    "C:\\A\\S\\src\\Libraries\\Nop.Data\\Nop.Data.csproj": {
+    "c:\\A\\S\\src\\Libraries\\Nop.Data\\Nop.Data.csproj": {
       "version": "4.90.0",
       "restore": {
-        "projectUniqueName": "C:\\A\\S\\src\\Libraries\\Nop.Data\\Nop.Data.csproj",
+        "projectUniqueName": "c:\\A\\S\\src\\Libraries\\Nop.Data\\Nop.Data.csproj",
         "projectName": "Nop.Data",
-        "projectPath": "C:\\A\\S\\src\\Libraries\\Nop.Data\\Nop.Data.csproj",
+        "projectPath": "c:\\A\\S\\src\\Libraries\\Nop.Data\\Nop.Data.csproj",
         "packagesPath": "C:\\Users\\akfgl\\.nuget\\packages\\",
-        "outputPath": "C:\\A\\S\\src\\Libraries\\Nop.Data\\obj\\",
+        "outputPath": "c:\\A\\S\\src\\Libraries\\Nop.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -149,11 +147,10 @@
         },
         "frameworks": {
           "net9.0": {
-            "framework": "net9.0",
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\A\\S\\src\\Libraries\\Nop.Core\\Nop.Core.csproj": {
-                "projectPath": "C:\\A\\S\\src\\Libraries\\Nop.Core\\Nop.Core.csproj"
+              "c:\\A\\S\\src\\Libraries\\Nop.Core\\Nop.Core.csproj": {
+                "projectPath": "c:\\A\\S\\src\\Libraries\\Nop.Core\\Nop.Core.csproj"
               }
             }
           }
@@ -178,7 +175,6 @@
       },
       "frameworks": {
         "net9.0": {
-          "framework": "net9.0",
           "targetAlias": "net9.0",
           "dependencies": {
             "FluentMigrator": {
@@ -234,14 +230,14 @@
         }
       }
     },
-    "C:\\A\\S\\src\\Libraries\\Nop.Services\\Nop.Services.csproj": {
+    "c:\\A\\S\\src\\Libraries\\Nop.Services\\Nop.Services.csproj": {
       "version": "4.90.0",
       "restore": {
-        "projectUniqueName": "C:\\A\\S\\src\\Libraries\\Nop.Services\\Nop.Services.csproj",
+        "projectUniqueName": "c:\\A\\S\\src\\Libraries\\Nop.Services\\Nop.Services.csproj",
         "projectName": "Nop.Services",
-        "projectPath": "C:\\A\\S\\src\\Libraries\\Nop.Services\\Nop.Services.csproj",
+        "projectPath": "c:\\A\\S\\src\\Libraries\\Nop.Services\\Nop.Services.csproj",
         "packagesPath": "C:\\Users\\akfgl\\.nuget\\packages\\",
-        "outputPath": "C:\\A\\S\\src\\Libraries\\Nop.Services\\obj\\",
+        "outputPath": "c:\\A\\S\\src\\Libraries\\Nop.Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -260,14 +256,13 @@
         },
         "frameworks": {
           "net9.0": {
-            "framework": "net9.0",
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\A\\S\\src\\Libraries\\Nop.Core\\Nop.Core.csproj": {
-                "projectPath": "C:\\A\\S\\src\\Libraries\\Nop.Core\\Nop.Core.csproj"
+              "c:\\A\\S\\src\\Libraries\\Nop.Core\\Nop.Core.csproj": {
+                "projectPath": "c:\\A\\S\\src\\Libraries\\Nop.Core\\Nop.Core.csproj"
               },
-              "C:\\A\\S\\src\\Libraries\\Nop.Data\\Nop.Data.csproj": {
-                "projectPath": "C:\\A\\S\\src\\Libraries\\Nop.Data\\Nop.Data.csproj"
+              "c:\\A\\S\\src\\Libraries\\Nop.Data\\Nop.Data.csproj": {
+                "projectPath": "c:\\A\\S\\src\\Libraries\\Nop.Data\\Nop.Data.csproj"
               }
             }
           }
@@ -292,7 +287,6 @@
       },
       "frameworks": {
         "net9.0": {
-          "framework": "net9.0",
           "targetAlias": "net9.0",
           "dependencies": {
             "ClosedXML": {
@@ -364,14 +358,14 @@
         }
       }
     },
-    "C:\\A\\S\\src\\Plugins\\Nop.Plugin.Misc.AiOptimizer\\Nop.Plugin.Misc.AiOptimizer.csproj": {
+    "c:\\A\\S\\src\\Plugins\\Nop.Plugin.Misc.AiOptimizer\\Nop.Plugin.Misc.AiOptimizer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\A\\S\\src\\Plugins\\Nop.Plugin.Misc.AiOptimizer\\Nop.Plugin.Misc.AiOptimizer.csproj",
+        "projectUniqueName": "c:\\A\\S\\src\\Plugins\\Nop.Plugin.Misc.AiOptimizer\\Nop.Plugin.Misc.AiOptimizer.csproj",
         "projectName": "Nop.Plugin.Misc.AiOptimizer",
-        "projectPath": "C:\\A\\S\\src\\Plugins\\Nop.Plugin.Misc.AiOptimizer\\Nop.Plugin.Misc.AiOptimizer.csproj",
+        "projectPath": "c:\\A\\S\\src\\Plugins\\Nop.Plugin.Misc.AiOptimizer\\Nop.Plugin.Misc.AiOptimizer.csproj",
         "packagesPath": "C:\\Users\\akfgl\\.nuget\\packages\\",
-        "outputPath": "C:\\A\\S\\src\\Plugins\\Nop.Plugin.Misc.AiOptimizer\\obj\\",
+        "outputPath": "c:\\A\\S\\src\\Plugins\\Nop.Plugin.Misc.AiOptimizer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -390,17 +384,16 @@
         },
         "frameworks": {
           "net9.0": {
-            "framework": "net9.0",
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\A\\S\\src\\Libraries\\Nop.Core\\Nop.Core.csproj": {
-                "projectPath": "C:\\A\\S\\src\\Libraries\\Nop.Core\\Nop.Core.csproj"
+              "c:\\A\\S\\src\\Libraries\\Nop.Core\\Nop.Core.csproj": {
+                "projectPath": "c:\\A\\S\\src\\Libraries\\Nop.Core\\Nop.Core.csproj"
               },
-              "C:\\A\\S\\src\\Libraries\\Nop.Services\\Nop.Services.csproj": {
-                "projectPath": "C:\\A\\S\\src\\Libraries\\Nop.Services\\Nop.Services.csproj"
+              "c:\\A\\S\\src\\Libraries\\Nop.Services\\Nop.Services.csproj": {
+                "projectPath": "c:\\A\\S\\src\\Libraries\\Nop.Services\\Nop.Services.csproj"
               },
-              "C:\\A\\S\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj": {
-                "projectPath": "C:\\A\\S\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj"
+              "c:\\A\\S\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj": {
+                "projectPath": "c:\\A\\S\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj"
               }
             }
           }
@@ -425,7 +418,6 @@
       },
       "frameworks": {
         "net9.0": {
-          "framework": "net9.0",
           "targetAlias": "net9.0",
           "imports": [
             "net461",
@@ -447,14 +439,14 @@
         }
       }
     },
-    "C:\\A\\S\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj": {
+    "c:\\A\\S\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj": {
       "version": "4.90.0",
       "restore": {
-        "projectUniqueName": "C:\\A\\S\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj",
+        "projectUniqueName": "c:\\A\\S\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj",
         "projectName": "Nop.Web.Framework",
-        "projectPath": "C:\\A\\S\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj",
+        "projectPath": "c:\\A\\S\\src\\Presentation\\Nop.Web.Framework\\Nop.Web.Framework.csproj",
         "packagesPath": "C:\\Users\\akfgl\\.nuget\\packages\\",
-        "outputPath": "C:\\A\\S\\src\\Presentation\\Nop.Web.Framework\\obj\\",
+        "outputPath": "c:\\A\\S\\src\\Presentation\\Nop.Web.Framework\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -473,17 +465,16 @@
         },
         "frameworks": {
           "net9.0": {
-            "framework": "net9.0",
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\A\\S\\src\\Libraries\\Nop.Core\\Nop.Core.csproj": {
-                "projectPath": "C:\\A\\S\\src\\Libraries\\Nop.Core\\Nop.Core.csproj"
+              "c:\\A\\S\\src\\Libraries\\Nop.Core\\Nop.Core.csproj": {
+                "projectPath": "c:\\A\\S\\src\\Libraries\\Nop.Core\\Nop.Core.csproj"
               },
-              "C:\\A\\S\\src\\Libraries\\Nop.Data\\Nop.Data.csproj": {
-                "projectPath": "C:\\A\\S\\src\\Libraries\\Nop.Data\\Nop.Data.csproj"
+              "c:\\A\\S\\src\\Libraries\\Nop.Data\\Nop.Data.csproj": {
+                "projectPath": "c:\\A\\S\\src\\Libraries\\Nop.Data\\Nop.Data.csproj"
               },
-              "C:\\A\\S\\src\\Libraries\\Nop.Services\\Nop.Services.csproj": {
-                "projectPath": "C:\\A\\S\\src\\Libraries\\Nop.Services\\Nop.Services.csproj"
+              "c:\\A\\S\\src\\Libraries\\Nop.Services\\Nop.Services.csproj": {
+                "projectPath": "c:\\A\\S\\src\\Libraries\\Nop.Services\\Nop.Services.csproj"
               }
             }
           }
@@ -508,7 +499,6 @@
       },
       "frameworks": {
         "net9.0": {
-          "framework": "net9.0",
           "targetAlias": "net9.0",
           "dependencies": {
             "DeepL.net": {
