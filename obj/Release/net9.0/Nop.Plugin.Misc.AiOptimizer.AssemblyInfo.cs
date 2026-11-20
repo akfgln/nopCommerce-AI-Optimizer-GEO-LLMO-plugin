@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Copyright © AundO")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3c142f28a301689a5904af2e63f5fe5c5483b363")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+097347e8968c5b244dbab2dc075a6e073f4aaa2c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Nop.Plugin.Misc.AiOptimizer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Nop.Plugin.Misc.AiOptimizer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

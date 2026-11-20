@@ -15,3 +15,6 @@ publish/
 # OS generated files
 .DS_Store
 Thumbs.db
+obj
+Debug
+Release
